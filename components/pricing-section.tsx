@@ -25,7 +25,7 @@ export function PricingSection() {
     {
       name: "Cosmos",
       monthlyPrice: "R$487,00",
-      annualPrice: "$16",
+      annualPrice: "487,00",
       description: "Ideal para psicólogos que já possuem uma prática estabelecida na jornada clínica.",
       features: [
         "Até 500 relatórios/mês",
@@ -39,7 +39,7 @@ export function PricingSection() {
     {
       name: "Galácticos",
       monthlyPrice: "R$739",
-      annualPrice: "R$160",
+      annualPrice: "R$739",
       description: "Ideal para clínicas e grupos de profissionais.",
       features: [
         "Até 800 relatórios/mês",
@@ -62,7 +62,7 @@ export function PricingSection() {
             Escolha um plano que se encaixe no sua rotina de atendimento, desde profissionais iniciantes até psicólogos experientes e clínicas de grande porte.
           </p>
         </div>
-        <div className="pt-4">
+        {/* <div className="pt-4">
           <div className="p-0.5 bg-muted rounded-lg outline outline-1 outline-[#0307120a] outline-offset-[-1px] flex justify-start items-center gap-1 md:mt-0">
             <button
               onClick={() => setIsAnnual(true)}
@@ -85,7 +85,7 @@ export function PricingSection() {
               </span>
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="self-stretch px-5 flex flex-col md:flex-row justify-start items-start gap-4 md:gap-6 mt-6 max-w-[1100px] mx-auto">
         {pricingPlans.map((plan) => (
@@ -155,7 +155,7 @@ export function PricingSection() {
               >
                 <div className="px-1.5 flex justify-center items-center gap-2">
                   <span
-                    className={`text-center text-sm font-medium leading-tight ${plan.name === "Free" ? "text-gray-800" : plan.name === "Pro" ? "text-primary" : "text-zinc-950"}`}
+                    className={`text-center text-sm font-medium leading-tight ${plan.name === "Free" ? "text-gray-800" : plan.name === "Pro" ? "text-white" : "text-zinc-950"}`}
                   >
                     {plan.buttonText}
                   </span>
