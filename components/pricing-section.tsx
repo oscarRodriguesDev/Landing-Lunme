@@ -23,7 +23,7 @@ export function PricingSection() {
     },
 
     {
-      name: "Horizonte",
+      name: "Cosmos",
       monthlyPrice: "R$487,00",
       annualPrice: "$16",
       description: "Ideal para psicólogos que já possuem uma prática estabelecida na jornada clínica.",
@@ -37,7 +37,7 @@ export function PricingSection() {
       popular: true,
     },
     {
-      name: "Cosmos",
+      name: "Galácticos",
       monthlyPrice: "R$739",
       annualPrice: "R$160",
       description: "Ideal para clínicas e grupos de profissionais.",
