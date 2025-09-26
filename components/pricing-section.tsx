@@ -16,6 +16,7 @@ export function PricingSection() {
       features: [
         "Até 300 relatórios/mês",
         "Suporte técnico",
+        "R$ 1,27/relatorio"
       ],
       buttonText: "Comece agora",
       buttonClass:
@@ -30,6 +31,7 @@ export function PricingSection() {
       features: [
         "Até 500 relatórios/mês",
         "Suporte técnico",
+        "R$ 0,97/relatorio"
       ],
       buttonText: "Comece agora",
       buttonClass:
@@ -38,12 +40,13 @@ export function PricingSection() {
     },
     {
       name: "Galácticos",
-      monthlyPrice: "R$739",
-      annualPrice: "R$739",
+      monthlyPrice: "R$621",
+      annualPrice: "R$621",
       description: "Ideal para clínicas e grupos de profissionais.",
       features: [
         "Até 800 relatórios/mês",
         "Suporte técnico",
+        "R$ 0,77/relatorio"
       ],
       buttonText: "Comece agora",
       buttonClass:
@@ -155,7 +158,7 @@ export function PricingSection() {
               >
                 <div className="px-1.5 flex justify-center items-center gap-2">
                   <span
-                    className={`text-center text-sm font-medium leading-tight ${plan.name === "Free" ? "text-gray-800" : plan.name === "Pro" ? "text-white" : "text-zinc-950"}`}
+                    className={`text-center text-sm font-medium leading-tight ${plan.name === "Free" ? "text-gray-800" : plan.name === "Pro" ? "text-primary" : "text-zinc-950"}`}
                   >
                     {plan.buttonText}
                   </span>
@@ -163,11 +166,11 @@ export function PricingSection() {
               </Button>
             </div>
             <div className="self-stretch flex flex-col justify-start items-start gap-4">
-              <div
+              {/* <div
                 className={`self-stretch text-sm font-medium leading-tight ${plan.popular ? "text-primary-foreground/70" : "text-muted-foreground"}`}
               >
                 {plan.name === "Free" ? "Get Started today:" : "Everything in Free +"}
-              </div>
+              </div> */}
               <div className="self-stretch flex flex-col justify-start items-start gap-3">
                 {plan.features.map((feature) => (
                   <div key={feature} className="self-stretch flex justify-start items-center gap-2">
